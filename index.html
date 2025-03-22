@@ -29,7 +29,7 @@
                     advanced forms : validation, labelling etc
                 </li>
             </ol>
-        </section>
+        </section><br><hr>
         <section>
             <h3>
                 Using Audio and Video Tags
@@ -127,6 +127,7 @@
             </table>
         </section>
         <section>
+            <hr>
             <h2>
                 Are you missing in the list above? Register below.
             </h2>
@@ -141,7 +142,7 @@
                 </label><br><br>
                 <label for="password">
                     Password:
-                    <input type="password" required name="password" id="password">
+                    <input type="password" required name="password" id="password" minlength="8">
                 </label><br><br>
                 <label for="date">
                     Date:
@@ -149,7 +150,7 @@
                 </label>
                 <label for="residence">Select residence:</label>
                 <select name="residence" id="residence" required>
-                    <option value="No residence selected, click to select" selected>No residence selected, click to select</option>
+                    <option value="No residence selected, click to select" >No residence selected, click to select</option>
                     <option value="Kisumu">Kisumu</option>
                     <option value="Murang'a">Murang'a</option>
                     <option value="Machakos">Machakos</option>
@@ -171,7 +172,7 @@
               <fieldset>
                 <legend>Gender</legend>
                 <label for="male">
-                    <input type="radio" name="gender" id="male" value="male">
+                    <input type="radio" name="gender" id="male" value="male" required>
                     Male
                 </label>
                 <label for="female">
@@ -179,6 +180,8 @@
                     Female
                 </label>
               </fieldset>
+              <br><br>
+              <button type="submit">Register</button>
             </form>
         </section>
     </main>
