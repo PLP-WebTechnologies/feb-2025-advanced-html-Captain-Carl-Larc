@@ -11,6 +11,177 @@
             Welcome to my week 2 assignment
         </h1>
     </header>
+    <main>
+        <section>
+            <img src="https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image of road in a garden">
+            <h4>
+                What's in this webpage:
+            </h4>
+            <ol type="I">
+                <li>Using audio tag</li>
+                <li>
+                    using video tag
+                </li>
+                <li>
+                    using image tag
+                </li>
+                <li>
+                    advanced forms : validation, labelling etc
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h3>
+                Using Audio and Video Tags
+            </h3>
+            <h4>
+                Audio tag
+            </h4>
+            <audio src="audio.mp3" autoplay muted controls></audio>
+            <h4>
+                Video tag
+            </h4>
+            <video autoplay muted src="video.mp4" controls></video>
+        </section>
+        <section>
+            <h3>
+                Using table tag
+            </h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>name</th>
+                        <th>address</th>
+                        <th>
+                            mobile
+                        </th>
+                        <th>email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kalwenzi</td>
+                        <td>KU</td>
+                        <td>0790070100</td>
+                        <td>
+                            kalwenzi@gmail.com
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Carl
+                        </td>
+                        <td>
+                            Nairobi
+                        </td>
+                        <td>
+                            0793764993
+                        </td>
+                        <td>
+                            carl@gmail.com
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Kush
+                        </td>
+                        <td>
+                            Kisii
+                        </td>
+                        <td>
+                            0723657845
+                        </td>
+                        <td>
+                            kush@email.com
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Richnorton
+                        </td>
+                        <td>
+                            Meru
+                        </td>
+                        <td>
+                            0789764563
+                        </td>
+                        <td>
+                            kaiya23@gmail.com
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Mark
+                        </td>
+                        <td>
+                            Nakuru
+                        </td>
+                        <td>
+                            0789764563
+                        </td>
+                        <td>
+                            mark@gmail
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>
+                Are you missing in the list above? Register below.
+            </h2>
+            <form action="" method="get">
+                <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Kalwenzi" required>
+                </label><br><br>
+                <label for="email">
+                    Email: 
+                    <input type="email" required name="email" id="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                    title="Please enter a valid email address (e.g., example@example.com).">
+                </label><br><br>
+                <label for="password">
+                    Password:
+                    <input type="password" required name="password" id="password">
+                </label><br><br>
+                <label for="date">
+                    Date:
+                    <input type="date" required name="date" id="date"><br><br>
+                </label>
+                <label for="residence">Select residence:</label>
+                <select name="residence" id="residence" required>
+                    <option value="No residence selected, click to select" selected>No residence selected, click to select</option>
+                    <option value="Kisumu">Kisumu</option>
+                    <option value="Murang'a">Murang'a</option>
+                    <option value="Machakos">Machakos</option>
+                    <option value="Kitui">Kitui</option>
+                    <option value="Non-kenyan" disabled>Non-kenyan</option>
+                </select><br><br>
+              <fieldset>
+                <legend>Programming Languages of interest</legend>
+                <label for="java">
+                    <input type="checkbox" name="java" id="java" value="java"> java
+                </label>
+                <label for="javascript">
+                    <input type="checkbox" name="javascript" id="javascript" value="javascript"> javascript
+                </label>
+                <label for="Python">
+                    <input type="checkbox" name="Python" id="Python" value="Python" checked> Python
+                </label>               
+              </fieldset> <br><br>
+              <fieldset>
+                <legend>Gender</legend>
+                <label for="male">
+                    <input type="radio" name="gender" id="male" value="male">
+                    Male
+                </label>
+                <label for="female">
+                    <input type="radio" name="gender" id="female" value="female">
+                    Female
+                </label>
+              </fieldset>
+            </form>
+        </section>
+    </main>
     
 </body>
 </html>
